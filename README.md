@@ -17,8 +17,14 @@ powershell
 * RemoteSigned: 未签名
 
 ```shell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+#
 Get-ExecutionPolicy
+#
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+#
+Get-ExecutionPolicy -List
+#
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 安装fnm&node
